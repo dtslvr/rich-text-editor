@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./core",
+        "declaration": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "target": "es5",
+        "esModuleInterop": true,
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "downlevelIteration": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true
+    }
+}

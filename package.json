@@ -1,0 +1,56 @@
+{
+    "name": "rich-text-editor",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./index.ts",
+    "types": "./index.d.ts",
+    "files": [
+        "/core"
+    ],
+    "scripts": {
+        "build": "rm -rf core && tsc",
+        "build:storybook": "build-storybook -s ./public",
+        "prepare": "npm run build",
+        "start": "start-storybook --no-manager-cache -p 6006 -s ./public"
+    },
+    "dependencies": {
+        "@material-ui/core": "4.11.0",
+        "@material-ui/icons": "4.9.1",
+        "@material-ui/lab": "4.0.0-alpha.57"
+    },
+    "devDependencies": {
+        "@babel/core": "7.15.0",
+        "@storybook/addon-actions": "6.4.4",
+        "@storybook/addon-docs": "6.4.4",
+        "@storybook/addon-essentials": "6.4.4",
+        "@storybook/addon-links": "6.4.4",
+        "@storybook/addons": "6.4.4",
+        "@storybook/react": "6.4.4",
+        "@storybook/theming": "6.4.4",
+        "@mdx-js/react": "1.6.22",
+        "@types/node": "13.7.7",
+        "@types/react": "16.9.56",
+        "@types/react-dom": "16.9.9",
+        "@types/react-resizable": "1.7.3",
+        "@typescript-eslint/eslint-plugin": "2.34.0",
+        "@typescript-eslint/parser": "2.34.0",
+        "babel-eslint": "10.1.0",
+        "babel-loader": "8.2.2",
+        "css-loader": "3.6.0",
+        "prettier": "2.3.2",
+        "react": "16.14.0",
+        "react-dom": "16.14.0",
+        "react-scripts": "4.0.3",
+        "ts-loader": "8.0.7",
+        "typescript": "4.3.5"
+    },
+    "peerDependencies": {
+        "@udecode/plate": "^9.2.1",
+        "@udecode/plate-core": "^9.2.1",
+        "@udecode/plate-common": "^7.0.2",
+        "mdi-material-ui": "^6.22.1",
+        "slate": "^0.72.3",
+        "slate-hyperscript": "^0.67.0",
+        "slate-react": "^0.72.1"
+    }
+}
